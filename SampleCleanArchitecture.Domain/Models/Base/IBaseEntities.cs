@@ -1,0 +1,13 @@
+﻿namespace SampleCleanArchitecture.Domain.Models.Base;
+
+public interface IBaseEntities
+{
+    public Guid Id { get; set; }
+    public bool IsActive { get; set; }
+    public bool IsDeleted { get; set; }
+    public string? CreatedBy { get; set; }
+    public DateTime? CreatedDate { get; set; }
+    public string? ModifiedBy { get; set; }
+    public DateTime? ModifiedDate { get; set; }
+    public byte[]? RowVersion { get; set; }
+}
